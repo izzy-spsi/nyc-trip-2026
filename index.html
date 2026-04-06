@@ -3,6 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Aala Family NYC Trip — April 2026</title>
+<script>
+(function() {
+  var pwd = sessionStorage.getItem('nyc2026auth');
+  if (pwd !== 'nyc042026') {
+    var input = prompt('🗽 Aala Family NYC Trip\nEnter password to view:');
+    if (input !== 'nyc042026') {
+      document.documentElement.innerHTML = '<div style="font-family:sans-serif;text-align:center;padding:60px;"><h2>🔒 Access Denied</h2><p>Incorrect password. Please try again.</p></div>';
+      return;
+    }
+    sessionStorage.setItem('nyc2026auth', 'nyc042026');
+  }
+})();
+</script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -126,13 +139,16 @@
   <!-- Apr 10 (Fri) — Check Out -->
   <div class="day checkout">
     <div class="day-num">10</div>
-    <div class="day-label">Fri · Check Out</div>
+    <div class="day-label">Fri · Fly Home</div>
     <div class="ev"><span class="tag t-hotel">🏨 Checkout</span></div>
     <div class="ev">10:00 AM — Check out Wyndham Midtown 45</div>
     <div class="ev"><span class="tag t-flight">✈️ Return</span></div>
-    <div class="ev" style="color:#e53935;font-weight:600;">Return flights TBD</div>
+    <div class="ev">11:00 AM — JFK → MCO (F9 2557)</div>
+    <div class="ev">2:04 PM — Land MCO · 1h 58m layover</div>
+    <div class="ev">4:02 PM — MCO → LAX (F9 4145)</div>
+    <div class="ev">6:39 PM — Land LAX ✅</div>
     <div class="ev"><span class="tag t-parking">🚗 Car</span></div>
-    <div class="ev">Pick up @ Fox Auto Parks by 7:00 PM</div>
+    <div class="ev">Pick up @ Fox Auto Parks (by 7:00 PM)</div>
   </div>
 
   <!-- Apr 11 (Sat) — empty -->
@@ -154,7 +170,7 @@
     <li><strong>Tim Ziss office:</strong> 9614 3rd Ave, Brooklyn NY 11209</li>
     <li><strong>Boon's address:</strong> 611 W 56th St, New York, NY 10019 (10 min walk from hotel)</li>
     <li><strong>Justin Lai:</strong> Driving from Philadelphia · picking up from JFK on Tue Apr 7</li>
-    <li><strong>⚠️ Still needed:</strong> Return flights · Thu Apr 9 plan · Dinner reservations · Daniel Tisdale check-in confirmation</li>
+    <li><strong>⚠️ Still needed:</strong> Thu Apr 9 plan · Dinner reservations · Daniel Tisdale check-in confirmation</li>
   </ul>
 </div>
 
@@ -165,7 +181,8 @@
     <li><strong>Mon Apr 6 — LAX → ATL:</strong> Frontier F9 3216 · Departs 10:00 PM · Arrives 5:38 AM (Apr 7) · 4h 38m</li>
     <li><strong>Tue Apr 7 — ATL layover:</strong> 2h 22min @ Atlanta</li>
     <li><strong>Tue Apr 7 — ATL → JFK:</strong> Frontier F9 4732 · Departs 8:00 AM · Arrives 10:29 AM · 2h 29m</li>
-    <li><strong>Return:</strong> <span style="color:#e53935;font-weight:600;">TBD — not yet booked</span></li>
+    <li><strong>Fri Apr 10 — JFK → MCO:</strong> Frontier F9 2557 · Departs 11:00 AM · Arrives 2:04 PM · Layover 1h 58m</li>
+    <li><strong>Fri Apr 10 — MCO → LAX:</strong> Frontier F9 4145 · Departs 4:02 PM · Arrives 6:39 PM PT</li>
   </ul>
 </div>
 
