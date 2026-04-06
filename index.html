@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aala Family NYC Trip — April 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    padding: 24px;
+    font-size: 13px;
+  }
+  h1 { text-align: center; font-size: 22px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; color: #1a1a2e; }
+  .subtitle { text-align: center; font-size: 13px; color: #666; margin-bottom: 20px; }
+  .calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-bottom: 20px; }
+  .day-header { text-align: center; font-weight: 700; font-size: 11px; text-transform: uppercase; color: #666; padding: 6px 0; letter-spacing: 0.5px; }
+  .day { border: 1px solid #ddd; border-radius: 6px; padding: 8px 7px; min-height: 130px; background: #fafafa; }
+  .day.empty { background: #f5f5f5; border-color: #eee; min-height: 40px; }
+  .day.travel { background: #fff8e1; border-color: #f9a825; }
+  .day.nyc { background: #e3f2fd; border-color: #1e88e5; }
+  .day.work { background: #e8f5e9; border-color: #43a047; }
+  .day.checkout { background: #fbe9e7; border-color: #f4511e; }
+  .day.bigday { background: #fff3e0; border-color: #fb8c00; }
+  .day-num { font-size: 16px; font-weight: 700; color: #1a1a2e; margin-bottom: 3px; }
+  .day-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; color: #555; }
+  .tag { font-size: 9px; font-weight: 700; border-radius: 3px; padding: 1px 4px; display: inline-block; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .t-flight { background: #fff8e1; color: #f57f17; border: 1px solid #f9a825; }
+  .t-hotel { background: #e8f5e9; color: #2e7d32; border: 1px solid #66bb6a; }
+  .t-meeting { background: #f3e5f5; color: #6a1b9a; border: 1px solid #ce93d8; }
+  .t-dinner { background: #fce4ec; color: #c62828; border: 1px solid #ef9a9a; }
+  .t-activity { background: #e3f2fd; color: #1565c0; border: 1px solid #42a5f5; }
+  .t-parking { background: #efebe9; color: #4e342e; border: 1px solid #bcaaa4; }
+  .ev { font-size: 10.5px; line-height: 1.45; margin-bottom: 2px; color: #333; }
+  .pending { color: #e53935; font-weight: 600; }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; }
+  .legend-box { width: 14px; height: 14px; border-radius: 3px; border: 1px solid #ccc; }
+  .notes { border: 1px solid #ddd; border-radius: 8px; padding: 14px 18px; background: #f9f9f9; margin-bottom: 14px; }
+  .notes h3 { font-size: 13px; margin-bottom: 8px; color: #1a1a2e; }
+  .notes ul { list-style: none; padding: 0; }
+  .notes li { font-size: 11.5px; margin-bottom: 5px; padding-left: 16px; position: relative; color: #444; }
+  .notes li::before { content: "•"; position: absolute; left: 0; color: #999; }
+  @media print { body { padding: 12px; } .day { min-height: 110px; } }
+</style>
+</head>
+<body>
+
+<h1>🗽 Aala Family NYC Trip — April 2026</h1>
+<div class="subtitle">April 6–10, 2026 &nbsp;|&nbsp; Izzy · Amy · Nathan · Brayden</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-box" style="background:#fff8e1;border-color:#f9a825"></div> Travel Day</div>
+  <div class="legend-item"><div class="legend-box" style="background:#e3f2fd;border-color:#1e88e5"></div> NYC (Wyndham Midtown 45)</div>
+  <div class="legend-item"><div class="legend-box" style="background:#e8f5e9;border-color:#43a047"></div> Work Day</div>
+  <div class="legend-item"><div class="legend-box" style="background:#fbe9e7;border-color:#f4511e"></div> Check Out</div>
+</div>
+
+<div class="calendar">
+  <!-- Day headers -->
+  <div class="day-header">Sun</div>
+  <div class="day-header">Mon</div>
+  <div class="day-header">Tue</div>
+  <div class="day-header">Wed</div>
+  <div class="day-header">Thu</div>
+  <div class="day-header">Fri</div>
+  <div class="day-header">Sat</div>
+
+  <!-- Week 1: April 5 = Sun -->
+  <!-- Apr 5 (Sun) — empty -->
+  <div class="day empty"></div>
+
+  <!-- Apr 6 (Mon) — Depart LAX -->
+  <div class="day travel">
+    <div class="day-num">6</div>
+    <div class="day-label">Mon · Depart LA</div>
+    <div class="ev"><span class="tag t-parking">🚗 Parking</span></div>
+    <div class="ev">7:30 PM — Drop car @ Fox Auto Parks (10121 Glasgow Pl)</div>
+    <div class="ev"><span class="tag t-flight">✈️ Flight</span></div>
+    <div class="ev">10:00 PM — LAX → ATL (Frontier F9 3216)</div>
+    <div class="ev" style="color:#888;font-size:9.5px;">Overnight flight · 4h 38m</div>
+  </div>
+
+  <!-- Apr 7 (Tue) — Arrive NYC -->
+  <div class="day bigday">
+    <div class="day-num">7</div>
+    <div class="day-label">Tue · Arrive NYC</div>
+    <div class="ev"><span class="tag t-flight">✈️ Flight</span></div>
+    <div class="ev">5:38 AM — Land ATL · 2h 22m layover</div>
+    <div class="ev">8:00 AM — ATL → JFK (F9 4732)</div>
+    <div class="ev">10:29 AM — Land JFK 🗽</div>
+    <div class="ev"><span class="tag t-activity">🚗 Justin Lai</span></div>
+    <div class="ev">~11:30 AM — Justin picks up at JFK → Tim's office</div>
+    <div class="ev"><span class="tag t-meeting">📋 Meeting</span></div>
+    <div class="ev">~12:00–3:00 PM — Tim Ziss @ 9614 3rd Ave, Brooklyn</div>
+    <div class="ev" style="color:#888;font-size:9.5px;">Light session — long travel day</div>
+    <div class="ev"><span class="tag t-hotel">🏨 Hotel</span></div>
+    <div class="ev">4:00 PM — Check in Wyndham Midtown 45</div>
+    <div class="ev" style="color:#888;font-size:9.5px;">Conf# RCO0051259742BR · Under Daniel Tisdale</div>
+    <div class="ev"><span class="tag t-dinner">🍽️ Dinner</span></div>
+    <div class="ev">7:00 PM — Dinner w/ Boon &amp; Justin · Midtown</div>
+  </div>
+
+  <!-- Apr 8 (Wed) — Full Work Day -->
+  <div class="day work">
+    <div class="day-num">8</div>
+    <div class="day-label">Wed · Full Work Day</div>
+    <div class="ev"><span class="tag t-meeting">📋 Morning</span></div>
+    <div class="ev">AM — Meeting w/ Tim + Justin</div>
+    <div class="ev" style="color:#888;font-size:9.5px;">Justin departs back to Philly after</div>
+    <div class="ev"><span class="tag t-meeting">📋 All Day</span></div>
+    <div class="ev">Full day deep work w/ Tim Ziss</div>
+    <div class="ev"><span class="tag t-dinner">🍽️ Dinner</span></div>
+    <div class="ev" style="color:#e53935;font-weight:600;">Dinner TBD</div>
+  </div>
+
+  <!-- Apr 9 (Thu) — TBD -->
+  <div class="day nyc">
+    <div class="day-num">9</div>
+    <div class="day-label">Thu · NYC</div>
+    <div class="ev" style="color:#e53935;font-weight:600;">Itinerary TBD</div>
+    <div class="ev" style="color:#888;font-size:9.5px;">Family day? Boon? Explore Midtown?</div>
+  </div>
+
+  <!-- Apr 10 (Fri) — Check Out -->
+  <div class="day checkout">
+    <div class="day-num">10</div>
+    <div class="day-label">Fri · Check Out</div>
+    <div class="ev"><span class="tag t-hotel">🏨 Checkout</span></div>
+    <div class="ev">10:00 AM — Check out Wyndham Midtown 45</div>
+    <div class="ev"><span class="tag t-flight">✈️ Return</span></div>
+    <div class="ev" style="color:#e53935;font-weight:600;">Return flights TBD</div>
+    <div class="ev"><span class="tag t-parking">🚗 Car</span></div>
+    <div class="ev">Pick up @ Fox Auto Parks by 7:00 PM</div>
+  </div>
+
+  <!-- Apr 11 (Sat) — empty -->
+  <div class="day empty"></div>
+  <!-- Apr 12 (Sun) — empty -->
+  <div class="day empty"></div>
+
+</div>
+
+<!-- Key Details -->
+<div class="notes">
+  <h3>📋 Key Trip Details</h3>
+  <ul>
+    <li><strong>Travelers:</strong> Izzy, Amy, Nathan, Brayden</li>
+    <li><strong>Hotel:</strong> Club Wyndham Midtown 45 · 205 East 45th Street, NY 10017 · 212-867-5100 · Conf# RCO0051259742BR (under Daniel Tisdale)</li>
+    <li><strong>Security Deposit:</strong> $250 credit card required at check-in</li>
+    <li><strong>Hotel Perks:</strong> Presidential Reserve — Owners Lounge, complimentary snacks</li>
+    <li><strong>Car Parking:</strong> Fox Auto Parks · 10121 Glasgow Pl, LA 90045 · 310-342-6445 · Est. $63.53 (pay on pickup)</li>
+    <li><strong>Tim Ziss office:</strong> 9614 3rd Ave, Brooklyn NY 11209</li>
+    <li><strong>Boon's address:</strong> 611 W 56th St, New York, NY 10019 (10 min walk from hotel)</li>
+    <li><strong>Justin Lai:</strong> Driving from Philadelphia · picking up from JFK on Tue Apr 7</li>
+    <li><strong>⚠️ Still needed:</strong> Return flights · Thu Apr 9 plan · Dinner reservations · Daniel Tisdale check-in confirmation</li>
+  </ul>
+</div>
+
+<!-- Flights -->
+<div class="notes">
+  <h3>✈️ Flights</h3>
+  <ul>
+    <li><strong>Mon Apr 6 — LAX → ATL:</strong> Frontier F9 3216 · Departs 10:00 PM · Arrives 5:38 AM (Apr 7) · 4h 38m</li>
+    <li><strong>Tue Apr 7 — ATL layover:</strong> 2h 22min @ Atlanta</li>
+    <li><strong>Tue Apr 7 — ATL → JFK:</strong> Frontier F9 4732 · Departs 8:00 AM · Arrives 10:29 AM · 2h 29m</li>
+    <li><strong>Return:</strong> <span style="color:#e53935;font-weight:600;">TBD — not yet booked</span></li>
+  </ul>
+</div>
+
+<div style="text-align:center;font-size:10px;color:#aaa;margin-top:10px;">Generated by Jarvis · April 6, 2026</div>
+</body>
+</html>
