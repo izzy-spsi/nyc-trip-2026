@@ -12,10 +12,10 @@
   }
   window.addEventListener('DOMContentLoaded', function() {
     var stored = sessionStorage.getItem('nyc2026auth');
-    if (stored === 'nyc042026') { show(); return; }
+    if (stored === 'Nyc0426') { show(); return; }
     var input = prompt('🗽 Aala Family NYC Trip — April 2026\nEnter password to view:');
-    if (input === 'nyc042026') {
-      sessionStorage.setItem('nyc2026auth', 'nyc042026');
+    if (input === 'Nyc0426') {
+      sessionStorage.setItem('nyc2026auth', 'Nyc0426');
       show();
     } else {
       deny();
